@@ -1,0 +1,249 @@
+index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — Alchemist</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --gold: #FFC529;
+      --dark: #0B1530;
+      --muted: #64748B;
+      --border: #E5E7EB;
+      --bg: #FAFAFA;
+      --surface: #FFFFFF;
+    }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--bg);
+      color: var(--dark);
+      line-height: 1.75;
+      font-size: 16px;
+    }
+
+    header {
+      background: var(--dark);
+      padding: 28px 24px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .logo-mark {
+      width: 40px;
+      height: 40px;
+      background: var(--gold);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'DM Serif Display', serif;
+      font-size: 22px;
+      color: var(--dark);
+      flex-shrink: 0;
+    }
+
+    .app-name {
+      font-family: 'DM Serif Display', serif;
+      font-size: 22px;
+      color: #FFFFFF;
+      letter-spacing: -0.3px;
+    }
+
+    .app-sub {
+      font-size: 13px;
+      color: rgba(255,255,255,0.45);
+      margin-top: 1px;
+    }
+
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+
+    .page-title {
+      font-family: 'DM Serif Display', serif;
+      font-size: clamp(28px, 5vw, 38px);
+      color: var(--dark);
+      letter-spacing: -0.5px;
+      margin-bottom: 8px;
+    }
+
+    .effective-date {
+      font-size: 14px;
+      color: var(--muted);
+      margin-bottom: 40px;
+      padding-bottom: 40px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .highlight-box {
+      background: #FFF8E7;
+      border-left: 3px solid var(--gold);
+      border-radius: 0 8px 8px 0;
+      padding: 16px 20px;
+      margin-bottom: 40px;
+      font-size: 15px;
+      color: #5a4200;
+    }
+
+    .highlight-box strong { color: #3d2d00; }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 22px;
+      color: var(--dark);
+      margin-bottom: 12px;
+      letter-spacing: -0.2px;
+    }
+
+    p {
+      color: #334155;
+      margin-bottom: 12px;
+      font-size: 15.5px;
+    }
+
+    ul {
+      padding-left: 20px;
+      margin-bottom: 12px;
+    }
+
+    ul li {
+      color: #334155;
+      font-size: 15.5px;
+      margin-bottom: 6px;
+    }
+
+    ul li strong {
+      color: var(--dark);
+    }
+
+    a {
+      color: #1E6FD6;
+      text-decoration: none;
+    }
+
+    a:hover { text-decoration: underline; }
+
+    .divider {
+      height: 1px;
+      background: var(--border);
+      margin: 40px 0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 32px 24px;
+      font-size: 13px;
+      color: var(--muted);
+      border-top: 1px solid var(--border);
+    }
+
+    @media (max-width: 480px) {
+      main { padding: 32px 16px 60px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo-mark">A</div>
+  <div>
+    <div class="app-name">Alchemist</div>
+    <div class="app-sub">Personal Finance Tracker</div>
+  </div>
+</header>
+
+<main>
+  <h1 class="page-title">Privacy Policy</h1>
+  <p class="effective-date">Effective date: June 1, 2025 &nbsp;·&nbsp; Last updated: June 1, 2025</p>
+
+  <div class="highlight-box">
+    <strong>Short version:</strong> Alchemist stores all your financial data locally on your device. We do not collect, sell, or share your personal data. Google Drive backup is optional and controlled entirely by you.
+  </div>
+
+  <section>
+    <h2>1. Who We Are</h2>
+    <p>Alchemist is a personal finance tracking app for Android, built and maintained as an independent project. If you have any questions about this policy, you can reach us at <a href="mailto:amplefushion@gmail.com">amplefushion@gmail.com</a>.</p>
+  </section>
+
+  <section>
+    <h2>2. Data We Collect</h2>
+    <p>Alchemist is designed with privacy as a default. Here is exactly what happens with your data:</p>
+    <ul>
+      <li><strong>Transaction data</strong> — All income, expense, and transfer records you enter are stored locally on your device in a SQLite database. This data never leaves your device unless you explicitly choose to back it up to Google Drive.</li>
+      <li><strong>Categories and settings</strong> — Stored locally on your device only.</li>
+      <li><strong>Google account information</strong> — Only accessed if you choose to enable Google Drive backup. We access only your Google Drive AppData folder (a private, app-specific folder not visible in your regular Drive). We do not read, write, or access any other files in your Google Drive.</li>
+      <li><strong>Crash reports</strong> — If the app crashes, anonymised crash data is sent to Firebase Crashlytics to help us fix bugs. This data does not include any of your financial information.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>3. Data We Do NOT Collect</h2>
+    <ul>
+      <li>We do not collect your name, email address, or any personal identifiers</li>
+      <li>We do not track your location</li>
+      <li>We do not read your SMS, contacts, or any other data outside the app</li>
+      <li>We do not display ads or share data with advertisers</li>
+      <li>We do not sell your data to any third party — ever</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>4. Google Drive Backup</h2>
+    <p>Backup to Google Drive is entirely optional. When you enable it:</p>
+    <ul>
+      <li>You sign in with your Google account using the standard Google Sign-In flow</li>
+      <li>Alchemist saves a single encrypted JSON backup file to your Drive's AppData folder — a private area only this app can access</li>
+      <li>You can revoke access at any time from your <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">Google Account permissions page</a></li>
+      <li>Deleting the app removes the app's access to Drive automatically</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>5. Firebase Crashlytics</h2>
+    <p>We use Firebase Crashlytics to receive anonymised crash reports. This helps us identify and fix bugs. Crashlytics does not have access to your financial data. The data collected includes device model, OS version, app version, and the stack trace at the time of crash. No personally identifiable information is included. You can learn more at <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase Privacy Policy</a>.</p>
+  </section>
+
+  <section>
+    <h2>6. Data Storage and Security</h2>
+    <p>Your data lives in a local SQLite database on your device, protected by your device's own security (screen lock, encryption). We do not have any server-side access to your data. If you lose your device without a Drive backup, your data cannot be recovered by us.</p>
+  </section>
+
+  <section>
+    <h2>7. Children's Privacy</h2>
+    <p>Alchemist is not directed at children under 13. We do not knowingly collect data from children.</p>
+  </section>
+
+  <section>
+    <h2>8. Changes to This Policy</h2>
+    <p>If we make meaningful changes to this privacy policy, we will update the "Last updated" date at the top of this page. We encourage you to review this page periodically. Continued use of the app after changes constitutes acceptance of the updated policy.</p>
+  </section>
+
+  <section>
+    <h2>9. Contact</h2>
+    <p>Questions, concerns, or requests to delete your data? Email us at <a href="mailto:amplefushion@gmail.com">amplefushion@gmail.com</a> and we will respond within 7 business days.</p>
+  </section>
+
+  <div class="divider"></div>
+  <p style="font-size:14px; color: var(--muted);">This policy applies to the Alchemist Android app. It does not apply to any third-party services linked from within the app.</p>
+</main>
+
+<footer>
+  &copy; 2025 Alchemist &nbsp;·&nbsp; All your data stays yours.
+</footer>
+
+</body>
+</html>
